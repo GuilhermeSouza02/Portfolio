@@ -50,6 +50,10 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
         }
 
         .project-card:hover {
@@ -59,7 +63,9 @@
 
         .project-card img {
             width: 100%;
-            height: auto;
+            height: 400px;
+            object-fit: cover;
+            object-fit: contain;
             border-radius: 8px;
             margin-bottom: 1rem;
         }
@@ -80,11 +86,15 @@
             display: inline-block;
             background-color: #333;
             color: #fff;
-            padding: 0.8rem 2rem;
+            padding: 0.8rem 1.5rem;
             font-size: 1.1rem;
             border-radius: 4px;
             text-decoration: none;
             transition: background-color 0.3s;
+            min-width: 120px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: auto;
         }
 
         .project-card a:hover {
@@ -133,50 +143,54 @@
         <div class="projects">
             <!-- Projeto 1 -->
             <div class="project-card">
-                <img src="proj1.png" alt="Projeto 1">
+                <img src="img/proj1.png" alt="Projeto 1">
                 <h3>Pokedex</h3>
-                <p>Desenvolvida em HTML, CSS e Javascript, a pokeden mostra as imagens e os nome dos pokémon, atráves de
-                    uma API, puxada da internet.</p>
+                <p>Desenvolvida em HTML, CSS e Javascript, a Pokédex exibe imagens e nomes dos Pokémon através de uma
+                    API externa.</p>
                 <a href="https://github.com/GuilhermeSouza02/Pokedex" target="_blank">Ver no GitHub</a>
+
             </div>
 
             <!-- Projeto 2 -->
             <div class="project-card">
-                <img src="proj3.png" alt="Projeto 2">
+                <img src="img/proj2.png" alt="Projeto 2">
                 <h3>Checador Palíndromo</h3>
-                <p>Projeto de verificação de números que são ou não palíndromo, desenvolvido em HTML e Javascript.</p>
+                <p>Projeto para verificar se um número é palíndromo, desenvolvido usando HTML e Javascript de forma
+                    prática.</p>
                 <a href="https://github.com/GuilhermeSouza02/Check-Palindromo" target="_blank">Ver no GitHub</a>
             </div>
 
             <!-- Projeto 3 -->
             <div class="project-card">
-                <img src="proj4.png" alt="Projeto 3">
+                <img src="img/proj3.png" alt="Projeto 3">
                 <h3>Conversor de Medidas</h3>
-                <p>Conversor de horas, minutos e segundos, em HTML e Javascript.</p>
+                <p>Conversor de horas, minutos e segundos criado com HTML e Javascript para facilitar cálculos de tempo.
+                </p>
                 <a href="https://github.com/GuilhermeSouza02/Conversor-Medidas" target="_blank">Ver no GitHub</a>
             </div>
 
             <!-- Projeto 4 -->
             <div class="project-card">
-                <img src="" alt="Projeto 4">
-                <h3></h3>
-                <p></p>
-                <a href="" target="_blank">Ver no GitHub</a>
+                <img src="img/pet.png" alt="Projeto 4">
+                <h3>Pet-Easy</h3>
+                <p>Landing Page Pet Easy, criada no TCC do técnico, desenvolvida com HTML, CSS e Javascript de forma
+                    minimalista.</p>
+                <a href="https://github.com/GuilhermeSouza02/Pet-Easy" target="_blank">Ver no GitHub</a>
             </div>
 
             <!-- Projeto 5 -->
             <div class="project-card">
-                <img src="" alt="Projeto 5">
-                <h3></h3>
-                <p></p>
+                <img src="img/breve.jpeg" alt="Projeto 5">
+                <h3>Em breve</h3>
+                <p>Projeto em desenvolvimento.</p>
                 <a href="" target="_blank">Ver no GitHub</a>
             </div>
 
             <!-- Projeto 6 -->
             <div class="project-card">
-                <img src="" alt="Projeto 6">
-                <h3></h3>
-                <p></p>
+                <img src="img/breve.jpeg" alt="Projeto 6">
+                <h3>Em breve</h3>
+                <p>Projeto em desenvolvimento.</p>
                 <a href="" target="_blank">Ver no GitHub</a>
             </div>
         </div>
